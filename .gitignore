@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# ==========================================
+# 3. Environment Variables (Security Sensitive)
+# ==========================================
+.env
+.env.local
+.env.*.local
+/backend/.env
+/frontend/.env
+*.local
+/dist

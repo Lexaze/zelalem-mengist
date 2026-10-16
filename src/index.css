@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-white font-sans text-slate-700 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-300;
+  }
+
+  ::selection {
+    @apply bg-cyan-500/30;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-cyan-500;
+  }
+}
+
+@layer components {
+  /* Subtle engineering-paper grid used behind the hero */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(148 163 184 / 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(148 163 184 / 0.15) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 40%, transparent 100%);
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white/70 backdrop-blur transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900/60;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-slate-900 text-white shadow-lg shadow-slate-900/10 hover:-translate-y-0.5 hover:bg-slate-700 dark:bg-cyan-400 dark:text-slate-950 dark:shadow-cyan-400/20 dark:hover:bg-cyan-300;
+  }
+
+  .btn-secondary {
+    @apply btn border border-slate-300 text-slate-800 hover:-translate-y-0.5 hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-cyan-400 dark:hover:text-cyan-300;
+  }
+
+  .tag {
+    @apply rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1 font-mono text-xs text-slate-600 transition-colors duration-300 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-300;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-floaty,
+  .animate-blink {
+    animation: none;
+  }
+}
