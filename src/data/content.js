@@ -118,7 +118,7 @@ export const projects = [
       "Relational schema for users, questions and answers",
     ],
     tags: ["React", "Node.js", "MySQL", "RAG", "LLM API", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/Lexaze/Forum_Project_Collab",
     live: "#",
   },
   {
@@ -136,7 +136,7 @@ export const projects = [
       "Secure server-side API key handling",
     ],
     tags: ["React", "Node.js", "Python", "LLM API", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/Lexaze/generative_ai",
     live: "#",
   },
   {
