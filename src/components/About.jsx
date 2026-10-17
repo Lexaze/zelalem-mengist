@@ -23,8 +23,8 @@ export default function About() {
           <p>
             My curiosity about how people actually interact with technology led me to web
             development. After completing an intensive{' '}
-            <strong className="text-slate-900 dark:text-white">web development bootcamp</strong>, I
-            began building full-stack applications with React, Node.js, Python and relational
+            <strong className="text-slate-900 dark:text-white">AI-Powered Web Development bootcamp at Evangadi Networks</strong>, I
+            began building AI-powered full-stack applications with React, Node.js, Python and relational
             databases.
           </p>
           <p>

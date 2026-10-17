@@ -44,8 +44,8 @@ export const typedPhrases = [
 ];
 
 export const aboutStats = [
-  { value: 'B.Sc.', label: 'Electrical & Computer Engineering' },
-  { value: 'Bootcamp', label: 'Web Development graduate' },
+  { value: 'B.Sc.', label: 'Electrical & Computer Engineering from Addis Ababa University' },
+  { value: 'Evangadi Bootcamp', label: 'AI-Powered Web Development graduate' },
   { value: '3', label: 'Full-stack projects shipped' },
 ];
 
